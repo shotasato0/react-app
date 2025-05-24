@@ -33,7 +33,9 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      
+      'no-undef': 'error', // 未定義の変数をエラーにする
+      'no-unused-vars': 'error', // 未使用の変数をエラーにする
+      'react/prop-types': 'off', // prop-typesを無視する
     },
   },
 ]
