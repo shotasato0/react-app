@@ -1,5 +1,10 @@
 function Button() {
-  return <button type="button">Click me</button>
+  return (
+    <button type="button">
+      <i>icon</i>
+      <span>Click me</span>
+    </button>
+  );
 }
 
-export default Button
+export default Button;
