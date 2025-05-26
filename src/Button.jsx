@@ -1,14 +1,10 @@
-function Button() {
+function Button(props) {
 
-  const handleClick = () => {
-    console.log("clicked");
-    alert("clicked");
-  };
+  const {type, disabled} = props;
 
   return (
-    <button type="button" onClick={handleClick}>
-      <i>icon</i>
-      <span>Click me</span>
+    <button type={type} disabled={disabled}>
+      clicked
     </button>
   );
 }
