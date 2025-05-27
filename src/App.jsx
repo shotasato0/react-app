@@ -11,7 +11,7 @@ function App() {
     <>
       <h1>Hello World</h1>
       <Button type="button" disabled={false}>
-        クリック！
+        <span>クリック！</span>
       </Button>
     </>
   );
