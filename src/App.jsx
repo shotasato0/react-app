@@ -5,12 +5,15 @@ import "./App.css";
 import Button from "./Button.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
+  
+  const handleClick = () => {
+    console.log('clicked!')
+  }
 
   return (
     <>
       <h1>Hello World</h1>
-      <Button type="button" disabled={false}>
+      <Button type="button" disabled={false} onClick={handleClick}>
         <span>クリック！</span>
       </Button>
     </>
