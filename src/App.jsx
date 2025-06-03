@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Button from "./components/Button.jsx";
+import Display from "./components/Display/Display.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,8 +16,9 @@ function App() {
     <>
       <h1>Hello World</h1>
       <Button type="button" disabled={false} onClick={handleClick}>
-        クリック: {count}
+        ボタン
       </Button>
+      <Display count={count} />
     </>
   );
 }
