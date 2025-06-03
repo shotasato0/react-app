@@ -1,5 +1,4 @@
 import styles from "./Button.module.css";
-import { Children, useState } from "react";
 
 function Button(props) {
   const { type, disabled, onClick, children } = props;
