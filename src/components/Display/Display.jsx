@@ -1,11 +1,15 @@
-function Display(props) {
-    const { count } = props
+import { useEffect, useState } from "react";
 
-    return (
-        <div>
-            カウント: {count}
-        </div>
-    )
+function Display(props) {
+  const [text, setText] = useState("Loading...");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setText(`カウント: ${props.count}`);
+    }, 2000);
+  }, []);
+
+  return <div>{text}</div>;
 }
 
 export default Display;
